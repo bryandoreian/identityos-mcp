@@ -1,0 +1,15 @@
+{
+  "name": "identityos-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for identityOS: cardology, astrology, Human Design, Gene Keys, numerology, feng shui and BaZi readings for AI agents.",
+  "mcpName": "xyz.identityos/identityos",
+  "type": "module",
+  "bin": { "identityos-mcp": "index.js" },
+  "files": ["index.js", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node test.mjs" },
+  "keywords": ["mcp", "model-context-protocol", "astrology", "human-design", "gene-keys", "cardology", "numerology", "feng-shui", "bazi", "ai-agents"],
+  "homepage": "https://identityos.xyz/docs",
+  "repository": { "type": "git", "url": "git+https://github.com/bryandoreian/identityos-mcp.git" },
+  "license": "MIT"
+}

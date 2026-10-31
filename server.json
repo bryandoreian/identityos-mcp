@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "xyz.identityos/identityos",
+  "title": "identityOS",
+  "description": "Cardology, astrology, Human Design, Gene Keys, numerology, feng shui and BaZi for AI agents.",
+  "version": "0.1.0",
+  "websiteUrl": "https://identityos.xyz/docs",
+  "repository": { "url": "https://github.com/bryandoreian/identityos-mcp", "source": "github" },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://identityos.xyz/mcp",
+      "headers": [
+        { "name": "Authorization", "description": "Optional. 'Bearer <key>' raises the rate limit; the free tier needs no key.", "isRequired": false, "isSecret": true }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "identityos-mcp",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "IDENTITYOS_API_KEY", "description": "Optional API key; raises the rate limit.", "isRequired": false, "isSecret": true }
+      ]
+    }
+  ]
+}
