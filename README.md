@@ -1,6 +1,6 @@
 # identityOS MCP server
 
-Give any AI assistant the identityOS reading tools: **cardology** (birth cards, spreads, daily pulls, compatibility) today, with **astrology, Human Design, Gene Keys, numerology, feng shui and BaZi** on the same server as they launch.
+Give any AI assistant the identityOS reading tools: **cardology** (birth cards, spreads, daily pulls, compatibility) and a free reading and daily for **astrology, Human Design, Gene Keys, numerology, polarity, elemental, feng shui, BaZi and dreams**, all on one server.
 
 - Hosted MCP server: `https://identityos.xyz/mcp` (Streamable HTTP, no key needed for the free tier)
 - Docs: https://identityos.xyz/docs
@@ -48,13 +48,12 @@ Setup for every client: https://identityos.xyz/docs/mcp
 | `cardology_card_pull` | Card of the day, week or month by a three-cut pull | Live |
 | `cardology_spreads` | Life, spiritual and cosmic spreads, karma cards, yearly spreads | Live |
 | `cardology_compatibility` | Two birthdays or two cards, both directions | Live |
-| `natal_chart`, `sky_now`, `astro_transits` | Astrology | Planned |
-| `hd_chart`, `hd_gate`, `hd_center`, `hd_transits` | Human Design | Planned |
-| `gene_keys_profile`, `gene_keys_text` | Gene Keys | Planned |
-| `numerology_profile`, `numerology_personal_year` | Numerology | Planned |
-| `feng_shui_kua`, `feng_shui_flying_stars` | Feng shui | Planned |
-| `bazi_chart`, `bazi_luck_pillars` | BaZi (Four Pillars) | Planned |
-| `polarity_profile`, `elemental_balance` | Analysis across systems | Planned |
+| `<realm>_reading` | A free reading for astrology, Human Design, Gene Keys, numerology, polarity, elemental, feng shui, BaZi and dreams (`astrology_reading`, `human_design_reading`, `bazi_reading`, `dreams_reading`…) | Live, no key |
+| `<realm>_daily` | Today's reading for the same realms: the Moon, the gate, the key, the number, the pillar of the day, tonight's dream seeds | Live, no key |
+| `<realm>_profile` | Everything the engine computes for one realm | Live, needs a plan |
+| `natal_chart`, `sky_now`, `astro_transits`, `hd_chart`, `hd_gate`, `hd_center`, `hd_transits`, `gene_keys_text`, `numerology_personal_year`, `feng_shui_kua`, `feng_shui_flying_stars`, `bazi_chart`, `bazi_luck_pillars`, `elemental_balance` | Deeper tools per realm | Planned |
+
+The reading and the daily of every realm are free. A `_profile` tool needs an API key whose plan includes that realm, or the identityOS Pass for all nine: https://identityos.xyz/docs/plans
 
 Every tool is read-only (`readOnlyHint: true`). Full reference: https://identityos.xyz/docs/tools
 
